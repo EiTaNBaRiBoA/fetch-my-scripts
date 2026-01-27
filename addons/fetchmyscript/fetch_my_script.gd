@@ -120,7 +120,7 @@ func save_file(file_path: String, download_url: String):
 	req.request(download_url)
 	await req.request_completed
 	req.queue_free()
-		
+	
 func _write_request(result: int, response_code: int, headers: PackedStringArray, body: PackedByteArray, file_path: String):
 	var file_text: String = body.get_string_from_utf8()
 	var file: FileAccess = FileAccess.open(file_path, FileAccess.WRITE)
