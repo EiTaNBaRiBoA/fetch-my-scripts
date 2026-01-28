@@ -12,10 +12,11 @@ config_version=5
 
 config/name="Fetch My Script"
 config/features=PackedStringArray("4.5", "Forward Plus")
+config/icon="uid://pblrdofdbbx2"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/Godex/plugin.cfg", "res://addons/fetchmyscript/plugin.cfg", "res://addons/godot_vim/plugin.cfg")
+enabled=PackedStringArray("res://addons/fetchmyscript/plugin.cfg")
 
 [godot_vim]
 
