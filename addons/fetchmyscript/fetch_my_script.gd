@@ -9,14 +9,6 @@ var git_repo: String
 var popup: Window
 var fetched_dir: String
 
-func _enable_plugin() -> void:
-	pass
-
-func _disable_plugin() -> void:
-	# Remove autoloads here.
-	pass
-
-
 func _enter_tree() -> void:
 	fetch_button = Button.new()
 	fetch_button.text = "fetch"
