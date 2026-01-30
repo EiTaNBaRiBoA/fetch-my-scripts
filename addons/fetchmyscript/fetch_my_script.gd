@@ -104,6 +104,9 @@ func _fetch_final(result: int, response_code: int, headers: PackedStringArray, b
 	for file in files.keys():
 		var file_path: String = dir_path.path_join(file)
 		save_file(file_path,files[file])
+	# Refresh file system dock to show new files.
+	var file_system := EditorInterface.get_resource_filesystem()
+	if not file_system.is_scanning(): file_system.scan()
 
 func save_file(file_path: String, download_url: String):
 	var req := HTTPRequest.new()
