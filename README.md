@@ -2,7 +2,7 @@
 Simple plugin in Godot to fetch scripts and classes from Github repos.
 Adds a single button to the top right. Click it to display possible scripts to fetch.
 
-Change the setup.cfg to point to a public repo. Currently set up to fetch my personal custom classes, feel free to use them!
+Change the editor settings to point to a public repo. Currently set up to fetch my personal custom classes, feel free to use them!
 
 ## How to set up your personal Github Repository.
 The file structure is fairly easy, you can see the example at https://github.com/ItsBen321/godot-custom-classes
@@ -14,3 +14,11 @@ The file structure is fairly easy, you can see the example at https://github.com
 	- All the files that should get fetched when the folder is selected! (takes the raw strings and file names)
 
 The folder and the text files will be placed as a sub-folder of this plugin in your project. Enjoy!
+
+---
+
+## Changelog
+
+### 1.1
+- Automatically refreshes the file system after fetching
+- Now uses EditorSettings instead of a config file to set up.
